@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03HTML base1</title>
+</head>
+<body>
+    <h1 align="justify"> HOW-TO: Программа на Python, Часть 1 <img src="Icon-Python.png" alt="Логотип Python" title="Логотип Python" align="right"></h1> <!--Заголовок 1го уровня, с выравниванием по ширине страницы-->
+    <!--Маркированный список-->
+    <a name="Contents"></a> <!--Якорь-->
+    <ul>
+        <li><a href="base1.html"><em>Программа на Python — часть 1</em></a></li>
+        <li><a href="base2.html"><em>Программа на Python — часть 2</em></a></li>
+        <li><a href="base3.html"><em>Программа на Python — часть 3</em></a></li>
+    </ul> 
+    <h2 align="left">Содержание</h2> <!--Заголовок 2го уровня с выравниванием по левому краю-->
+    <h3 align="left">HOW-TO: Программа на Python, Часть 1</h3>
+    <ul>
+        <li><a href="base1.html#FirstPr">Наша первая программа</a></li>
+        <li><a href="base1.html#CycleFor">Пример цикла For</a></li>
+    </ul>
+    <p>Из множества существующих языков программирования Python — один из самых лёгких
+        в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+        обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+        создание консольных приложений, а в следующей — программирование графических
+        интерфейсов (<ins>GUI</ins>). Давайте создадим простую программу прямо сейчас.
+    </p>
+    <a name="FirstPr"></a>
+    <h2 align="left">Наша первая программа</h2>
+    <p><a href="base1.html#Contents">К содержанию</a></p>
+    <p>Наберём код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберёмся, что делает
+        каждая строка и пойдём дальше.
+    </p>
+    <p>Введите эти 4 строки:<br>
+        <br>
+        <br>
+        <code>#!/usr/bin/env python<br> <!--Пример кода-->
+            print 'Hello. I am a python program.'<br>
+            name = raw_input("What is your name?")<br>
+            print "Hello there, " + name + "!"<br>
+        </code>
+    </p>
+    <p>Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке
+        <strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто написать
+        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+        этого введите в терминале<br>
+        <br>
+        <ins>chmod +x hello.py</ins><br>
+        <br>
+        в папке, в которой вы сохранили программу. Теперь запустите её.
+    </p>
+    <p>
+        <code>greg@earth:~/python_examples$ ./hello.py<br>
+            Hello. I am a python program.<br>
+            What is your name? Ferd Burphel<br>
+            greg@earth:~/python_examples$
+        </code><br> Вот и всё.
+    </p>
+    <a name="CycleFor"></a>
+    <h2 align="left">Пример цикла For</h2>
+    <p><a href="base1.html#Contents">К содержанию</a></p>
+    <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+        редактор и наберите следующую программу:
+    </p>
+    <p>
+        <code>
+            <pre>
+#!/usr/bin/env python
+for cntr in range(0,10):
+&nbsp;&nbsp;&nbsp;&nbsp;print cntr
+            </pre>
+        </code>
+    </p>
+    <p><em>Не забудьте поставить символ табуляции перед строкой «print cntr».</em>Это важно. В
+        Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках программирования, а отступы.
+    </p>
+    <a name="Empty"></a>
+    <table width="100%" border="0">
+        <tr>
+            <td align="left"><a href="base1.html#Empty" title="Предыдущая страница"><img src="prev.png" alt="Предыдущая страница"></a></td>
+            <td align="center"><a href="#" title="Основное содержание"><img src="home.png" alt="Содержание страницы"></a></td>
+            <td align="right"><a href="base2.html" title="Следующая страница"><img src="next.png" alt="Следующая страница"></a></td>
+        </tr>
+    </table>
+</body>
+</html>
